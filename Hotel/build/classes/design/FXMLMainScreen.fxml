@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="design.MainScreenController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="556.0" prefWidth="89.0" spacing="70.0">
+            <children>
+                <ImageView id="0" fx:id="backImage" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#entered" onMouseExited="#exited" onMousePressed="#pressed" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@back_48px.png" />
+                    </image>
+                    <cursor>
+                    </cursor>
+                </ImageView>
+                <ImageView id="1" fx:id="receptionImage" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#entered" onMouseExited="#exited" onMousePressed="#pressed" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@reception_100px.png" />
+                    </image>
+                </ImageView>
+                <ImageView id="2" fx:id="guestsImage" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#entered" onMouseExited="#exited" onMousePressed="#pressed" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@people_60px.png" />
+                    </image>
+                </ImageView>
+                <ImageView id="3" fx:id="roomImage" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#entered" onMouseExited="#exited" onMousePressed="#pressed" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@bed_100px.png" />
+                    </image>
+                </ImageView>
+                <ImageView id="4" fx:id="settingsImage" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#entered" onMouseExited="#exited" onMousePressed="#pressed" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@settings_100px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <Pane fx:id="dataScene" layoutX="100.0" layoutY="3.0" prefHeight="550.0" prefWidth="900.0" />
+    </children>
+</AnchorPane>

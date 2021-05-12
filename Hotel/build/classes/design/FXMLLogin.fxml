@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="345.0" prefWidth="484.0" 
+            xmlns="http://javafx.com/javafx/8.0.171" 
+            xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="design.LoginController">
+   <children>
+      <CubicCurve controlX1="-168.10906982421875" controlX2="577.8867797851562" controlY1="-153.72476196289062" controlY2="-31.08588409423828" endX="-283.0000305175781" endY="-43.999996185302734" fill="DODGERBLUE" layoutX="283.0" layoutY="43.0" startX="-283.0" startY="301.0" stroke="TRANSPARENT" />
+      <JFXTextField fx:id="name" focusColor="#b50000" labelFloat="true" layoutX="117.0" layoutY="102.0" prefHeight="31.0" prefWidth="250.0" promptText="Name" />
+      <JFXPasswordField fx:id="password" focusColor="#b90202" labelFloat="true" layoutX="117.0" layoutY="179.0" prefHeight="23.0" prefWidth="250.0" promptText="Password" />
+      <JFXButton layoutX="201.0" layoutY="244.0" onAction="#login" prefHeight="39.0" prefWidth="82.0" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="errorMassege" layoutX="156.0" layoutY="303.0" text="Wrong name or password" textFill="#d30101" visible="false">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="design.ReceptionSceneController">
+   <children>
+      <Text layoutX="379.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView id="back" fitHeight="211.0" fitWidth="333.0" layoutX="116.0" layoutY="79.0" onMouseEntered="#entered" onMouseExited="#exited" onMouseReleased="#switchScenes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unnamed.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="guests" fitHeight="187.0" fitWidth="333.0" layoutX="462.0" layoutY="79.0" onMouseEntered="#entered" onMouseExited="#exited" onMouseReleased="#switchScenes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@party.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="rooms" fitHeight="187.0" fitWidth="333.0" layoutX="462.0" layoutY="328.0" onMouseEntered="#entered" onMouseExited="#exited" onMouseReleased="#switchScenes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-warm-hand-drawn-living-room-advertising-background-backgroundindoorliving-roomsofapotted-plantcactustablehand-image_63275.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="settings" fitHeight="187.0" fitWidth="333.0" layoutX="55.0" layoutY="326.0" onMouseEntered="#entered" onMouseExited="#exited" onMouseReleased="#switchScenes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@material-icon-2155446_1280.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
